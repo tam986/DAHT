@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +10,66 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.box-product-pageProduct{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+
+}
+
+.box-product-pageProduct:hover .button-container {
+  display: block;
+  top: 100px;
+}
+
+.box-product-pageProduct .overlay {
+  display: none;
+}
+.content-box-product .action-sp{
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.box-product-pageProduct:hover .action-sp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.box-product-pageProduct:hover .overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+.box-product-pageProduct:hover .buy-now-button{
+  background-color: #198754;
+  border:none;
+}
+Link:hover .buy-now-button{
+  color:red;
+}
+/* hiệu ứng box khuyến mãi */
+.box-km{
+  position: relative;
+  overflow: hidden;
+ 
+}
+.box-km:hover img{
+  transform: scale(1.1);
+  transition: ease-in-out 0.9s;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import Nav from "./Nav";
+import Topheader from "./Topheader";
 import { Dropdown, Card, Table } from "react-bootstrap";
 
 function Header() {
@@ -9,8 +10,9 @@ function Header() {
   return (
     <>
       {/* desktop screen start */}
+
       <nav
-        className="navbar navbar-expand-lg d-none fixed-top d-lg-flex"
+        className="navbar p-0 navbar-expand-lg d-none d-lg-flex"
         style={{ backgroundColor: "#FFFFFF" }}
       >
         <div className="container-fluid d-flex justify-content-between">

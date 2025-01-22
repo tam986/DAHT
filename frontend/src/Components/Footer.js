@@ -2,18 +2,34 @@ import React from "react";
 import { Link } from "react-router-dom";
 function Footer() {
   return (
-    <section pt-0>
-      <div className="container pt-4">
-        <Link className="navbar-brand">
-          <img
+    <section>
+      <div className="container d-flex justify-content-between align-items-center p-2">
+        <div className="container-fluid">
+          <Link className="navbar-brand">
+            {/* <img
             src="./tainguyenlab1/logo.svg"
             alt=""
             width="100"
             className="d-inline-block align-text-top"
-          />
-        </Link>
+          /> */}
+            <h2>Đặc sản Hưng Thịnh</h2>
+          </Link>
+        </div>
+
+        {/* socail share */}
+        <div className="container-fluid">
+          <div className="d-flex justify-content-end align-items-center gap-4">
+            <Link href="https://www.facebook.com/">
+              <i class="bi bi-facebook" style={{ fontSize: "25px" }}></i>
+            </Link>
+            <Link href="https://www.instagram.com/">
+              <i class="bi bi-messenger" style={{ fontSize: "25px" }}></i>
+            </Link>
+          </div>
+        </div>
+        {/* socail */}
       </div>
-      <div className="container ">
+      <div className="container">
         <div className="row mt-4">
           <div className="col-md-3 text-start d-flex flex-column align-items-start mb-4">
             <h6>CÔNG TY TNHH HƯNG THỊNH FOOD</h6>

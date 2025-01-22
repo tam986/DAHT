@@ -16,8 +16,8 @@ function App() {
   return (
     <div className="container-fluid p-0">
       <BrowserRouter basename="/">
-        <header>
-          <Topheader />
+        <Topheader />
+        <header className="position-sticky sticky-top p-0">
           <Header />
         </header>
         <main className="container-fluid p-0">
